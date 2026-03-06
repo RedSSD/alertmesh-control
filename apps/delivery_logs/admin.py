@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import DeliveryLog
+
+
+@admin.register(DeliveryLog)
+class DeliveryLogAdmin(admin.ModelAdmin):
+    list_display = ("id", "recipient", "channel", "status", "created_at")

@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 import os
-
 from pathlib import Path
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "drf_spectacular",
-    "apps.users",
     "apps.api_keys",
     "apps.recipients",
     "apps.rules",
